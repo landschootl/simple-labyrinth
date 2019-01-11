@@ -1,0 +1,91 @@
+<HTML>
+
+<HEAD>
+<TITLE>Labyrinthe Isn</TITLE>
+<script type="text/javascript" src="Labyrinthe ISN.js"></script>
+ <link href="Labyrinthe ISN.css" rel="stylesheet" type="text/css" media="screen"/>
+</HEAD>
+
+<BODY onload="départ()" onkeypress="move(event.keyCode)">  <!-- exécuter un script une fois une page Web est complètement installé tout le contenu et une fois qu'une touche est appuyé sa active move-->
+
+<h1>Le Labyrinthe !  </h1>
+
+<div id="MiseEnPage">
+<br>
+<b><font color="FF0606">_Paramètre du Labyrinthe_:</font></b><br><br>
+
+Nombre de joueur : <br>
+<INPUT TYPE="radio" id=OneJoueur NAME=NbTicket VALUE="Tick1" CHECKED>1 joueur
+<INPUT TYPE="radio" id=TwoJoueurs NAME=NbTicket VALUE="Tick2">2 joueurs
+<br><br>
+Couleur joueur 1 :
+<select id="1J">
+<option value="Red">Red
+<option value="Green">Green
+<option value="Yellow">Yellow
+<option value="Blue">Blue
+<option value="Silver">Silver
+<option value="Fuchsia">Fuchsia
+<option value="White">White
+<option value="Black">Black
+</select>
+<br><br>
+Couleur joueur 2 :
+<select id="2J">
+<option value="Blue">Blue
+<option value="Green">Green
+<option value="Yellow">Yellow
+<option value="Red">Red
+<option value="Silver">Silver
+<option value="Fuchsia">Fuchsia
+<option value="White">White
+<option value="Black">Black
+</select>
+<br><br>
+Trace Joueur1 :
+<select id="Trace1">
+<option value="White">White
+<option value="Green">Green
+<option value="Yellow">Yellow
+<option value="Red">Red
+<option value="Silver">Silver
+<option value="Fuchsia">Fuchsia
+<option value="Blue">Blue
+<option value="Black">Black
+</select>
+<br><br>
+Trace Joueur2 :
+<select id="Trace2">
+<option value="White">White
+<option value="Green">Green
+<option value="Yellow">Yellow
+<option value="Red">Red
+<option value="Silver">Silver
+<option value="Fuchsia">Fuchsia
+<option value="Blue">Blue
+<option value="Black">Black
+</select>
+<br><br>
+<Input type="Button" value="Valider" id=Button1 />
+<Input type="reset" value="réinitialiser" id=Reset onclick = " window.location.reload() "/>
+
+<br><br>
+<center><input type="button" name="presentation labyrinthe.html" value="Règles du jeu" onclick="self.location.href='presentation labyrinthe.html'" style="background-color:red" style="color:white; font-weight:bold" id="Button2" ></center>
+
+
+</div>
+
+<FORM name="form">
+<INPUT type="hidden" name="hauteur">   <!-- permet de définir une zone de formulaire invisible à l'écran -->
+<INPUT type="hidden" name="largeur">
+<INPUT type="hidden" name="positionX">
+<INPUT type="hidden" name="positionY">
+<INPUT type="hidden" name="positionT">
+<INPUT type="hidden" name="positionS">
+</FORM>
+
+<h3><marquee direction="left" scrollamount="5">Site mise en oeuvre par Ludovic.Landschoot, David.Guillon et Florian.Verdegem.”</marquee></h3>
+
+</BODY>
+
+</HTML>

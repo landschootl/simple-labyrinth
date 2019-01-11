@@ -1,0 +1,40 @@
+body {
+background-attachment : fixed;
+background-repeat: no-repeat;
+background-position: center;
+background-color: yellow;
+margin:0;
+padding:60;
+height: 100%;
+width: 100%;
+}
+
+h1 {
+text-align: center;
+color: Blue;
+}
+
+li {
+font-size:30;
+}
+
+h2{
+color: red;
+}
+
+input {
+text-align: center;
+}
+
+p {
+text-align: left;
+}
+
+imput {
+width: 100%; 
+}
+#Button1 {
+height: 10%;
+width: 20%;
+font-size: 50px;
+}
